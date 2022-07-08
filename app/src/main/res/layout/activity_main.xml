@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credit Card Purchase \nTracking App"
+        android:layout_marginBottom="25dp"
+        android:textSize="30dp"
+        />
+
+    <EditText
+        android:id="@+id/etStoreName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="Store Name"
+        android:inputType="text"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="Bill Amount"
+        android:inputType="numberDecimal"
+        />
+
+    <Switch
+        android:id="@+id/isPayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has bill been payed?"
+        android:textSize="15dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit data"
+        />
+
+    <Button
+        android:id="@+id/btnShowPurchases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View purchases" />
+
+    <Button
+        android:id="@+id/btnLoadDummyData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load dummy data" />
+
+</LinearLayout>
